@@ -1,6 +1,6 @@
 #game{
 	width:390px;
-	height:520px;
+	height:auto;
 	margin-top:150px;
 	margin-right:auto;
 	margin-bottom:0;
@@ -8,6 +8,12 @@
 	border: 20px solid rgb(52, 152, 219);
 	border-radius:20px;
 	box-shadow: 10px 10px 100px 0px rgba(255,255,255,0.75);
+}
+
+.info{
+	background-color: rgb(149, 165, 166);
+	font: bold 18px Consolas;
+	padding: 5%;
 }
 
 #form{

@@ -15,11 +15,11 @@ function startGame(){
 			
 			myGamePiece = new component(30,30,"smiley.gif", 100, 120, "image", true, false,0,0,0,0);
 			myScore = new component("30px", "Consolas", "black", 280, 40, "text", false, false,0,0,0,0);
-			myBackground = new component(656, 270, "country.png", 0, 0, "background", false,false,0,0,0,0);
+			myBackground = new component(656, 320, "country.png", 0, 0, "background", false,false,0,0,0,0);
 			myMusic = new sound("SweetDinosaur.mp3");
 			mySound = new sound("death.wav");
 			myMusic.play();
-			myGameArea.start(480,270);
+			myGameArea.start(480,320);
 }
 
 
@@ -83,16 +83,11 @@ function updateGameArea(){
 	
 	if(speed != 0){
 		SCORE += (( speed*10 / wallIntensity) + (myGameArea.frameNo / 30)) / 100;
-		
 	}
 	
 	
 	myScore.text = "SCORE: " + Math.round(SCORE);
 	myScore.update();
 	myGamePiece.newPos();
-	myGamePiece.update();
-	
-	
-	
+	myGamePiece.update();	
 }
-

@@ -33,7 +33,7 @@ var myGameArea = {
 		f.setAttribute("id", "form");
 		f.setAttribute("style", "background-color: rgb(91, 192, 222);");
 		f.innerHTML = '<p class="gameText"> Your Score Is: </p>' + '<p class="gameText score">' +Math.round(SCORE) + '</p>' + '<input type="hidden" name="score" value="' +Math.round(SCORE) + '">';
-		f.innerHTML += '<p id="nameInput" class="gameText formText"> Your Name: <input type ="text" class="inputText" name="name"></p><input type ="submit" class="btn btn-primary" value="Submit">'
+		f.innerHTML += '<p id="nameInput" class="gameText formText"> Your Name: <input type ="text" class="inputText" name="name"></p><input type ="submit" class="btn btn-primary mbot" value="Submit">'
 		document.getElementById("game").appendChild(f);
 	}
 }
