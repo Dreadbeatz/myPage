@@ -1,0 +1,98 @@
+#game{
+	width:390px;
+	height:520px;
+	margin-top:150px;
+	margin-right:auto;
+	margin-bottom:0;
+	margin-left:auto;
+	border: 20px solid rgb(52, 152, 219);
+	border-radius:20px;
+	box-shadow: 10px 10px 100px 0px rgba(255,255,255,0.75);
+}
+
+#form{
+	text-align: center;
+}
+
+.gameText{
+	letter-spacing: 1px;
+	font: bold 52px Consolas;
+	text-shadow: 8px 8px 8px rgba(0,0,0,0.30);
+	color: White;
+}
+
+.formText{
+	padding-top: 80px;
+	font-size: 15px;
+}
+
+@keyframes anim{
+	from{
+		transform: scale(1.5,1.5);
+	}
+	to{
+		transform: scale(1,1);
+	}
+}
+
+.score{
+	animation-name:anim;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	
+}
+
+.inputText{
+	color:black;
+	font-weight: normal;
+	font-family:serif;
+}
+
+#leader {
+	text-align: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	height: 56%;
+	width:100%;
+}
+
+#leader tr {
+	background-color: rgb(91, 192, 222);
+	letter-spacing: 1px;
+	font: 18px Consolas;
+	text-shadow: 8px 8px 8px rgba(0,0,0,0.30);
+	color: White;
+	text-align:center;
+}
+
+#leader tr:nth-child(even) {
+	background-color: rgb(98, 170, 222);
+}
+
+#leader #leadTitle{
+	letter-spacing: 5px;
+	color: white;
+	font: bold 20px Consolas;
+	text-align:center;
+	background-color: rgb(98, 170, 222);
+}
+
+#start{
+	height:38%;
+	width: 100%;
+	border-radius: 0px;
+}
+
+#startText{
+	animation-name:anim;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#leadNumb{
+	text-align: left;
+	padding-left: 5%;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="myPage">
+		<meta name="author" content="Matjaž Fikfak">
+		<title>myPage</title>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">	
+		<link href="myPage.css" rel="stylesheet">
+		<link href="spaceInvaders.css" rel="stylesheet">
+				
+		<script type="text/javascript" src ="GameBasicsJS.js"></script>
+		<script type="text/javascript" src ="SpaceInvaders.js"></script>
+	
+	</head>
+	
+	<body class="night">
+	
+		<div class="navbar-wrapper">
+			<div class="container">
+
+				<nav class="navbar navbar-inverse navbar-static-top">
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+								<span class="sr-only"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="http://matjaz-fikfak.ddns.net:3000">Matja&zcaron; Fikfak</a>
+						</div>
+						<div id="navbar" class="navbar-collapse collapse">
+							<ul class="nav navbar-nav">
+								<li><a href="http://matjaz-fikfak.ddns.net:3000" id="hom">Home</a></li>
+								<li><a href="http://matjaz-fikfak.ddns.net:3000/#/about" id="abt">About Me</a></li>
+								<li><a href="http://matjaz-fikfak.ddns.net:3000/#/contact" id="con">Contact</a></li>
+								<li id="gitHub"><a href="#" target="_self" data-toggle="tooltip" title="GitHub"></a></li>
+								<li id="lang-changer" class="btn-group" data-toggle="buttons">
+									<button id="eng" type="button" class="btn btn-default btn-lg active"></button>
+									<button id="slo" type="button" class="btn btn-default btn-lg darken"></button>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+
+			</div>
+		</div>
+	
+		<div class="container">
+			<div class="col-md-5">
+				<div id="game">
+					<table id="leader"></table>
+					<button id="start" type="button" class="btn btn-info btn-lg fill gameText"><p id="startText">START!</p></button>
+				</div>
+			</div>
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="cookies.js"></script>
+		<script src="changeLenguage.js"></script>
+		<script src="startGame.js"></script>
+		<script src="leaderSpaceInvaders.js"></script>
+	
+	</body>
+</html>

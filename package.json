@@ -1,0 +1,12 @@
+{
+  "name" : "myPage",
+  "version" : "0.7.0",
+  "description" : "A page to show of my work.",
+  "author" : "Matjaž Fikfak <matjaz.fikfak@gmail.com>",
+  "start" : "node index.js",
+  "dependencies" : {
+    "express": "4.10.2",
+	"mysql": "2.5.4",
+	"socket.io" : "1.4.5"
+  }
+}

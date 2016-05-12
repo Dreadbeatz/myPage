@@ -1,0 +1,89 @@
+#chat{
+	width:100%;
+	height:500px;
+	margin-top:100px;
+	margin-right:auto;
+	margin-bottom:0;
+	margin-left:auto;
+	border: 20px solid rgb(189, 195, 199);
+	border-radius:20px;
+	box-shadow: 10px 10px 85px 0px rgba(0,0,0,0.75);
+	background-color: rgb(236, 240, 241);
+}
+
+#chatForm { 
+	position: absolute;
+	bottom:2%;
+	max-width: 100%;
+	border-top: 3px solid rgb(189, 195, 199);
+}
+
+.chatBtn {
+	border-top: 3px solid rgb(189, 195, 199);
+	border-radius: 0;
+	padding: 10px; 
+	width: 100%;
+}
+
+form input {
+	border: 0;
+	padding-left:5%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-right: 3%;
+	width: 100%;
+}
+
+input:focus{
+    outline: none;
+}
+
+.unmarked{
+	list-style-type: none;
+	padding: 5px 10px; 
+}
+
+#messages{
+	height:81%;
+	overflow:auto;
+	list-style-type: none;
+	margin: 2%;
+	padding: 0;
+}
+
+#me{
+	
+}
+#others{
+	
+}
+.name{
+	font: 16px bold Consolas;
+}
+.msg{
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 15%;
+	margin-right: 15%;
+	border: 0px solid rgba(0,0,0,0.2);
+	border-radius: 15px;
+	border-top-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	background-color: white;
+	font: 14px Consolas;
+	display: block;
+}
+
+::-webkit-scrollbar{
+	width:2%;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+
