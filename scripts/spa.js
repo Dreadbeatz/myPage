@@ -13,6 +13,11 @@ spaMain.config(function($routeProvider,$locationProvider){
 			controller: 'homeCtrl'
 		})
 		
+		.when('/grid', {
+			templateUrl : 'homeGrid.html',
+			controller: 'homeCtrl'
+		})
+		
 		.when('/about', {
 			templateUrl: 'about.html',
 			controller: 'aboutCtrl'
@@ -38,11 +43,14 @@ spaMain.controller('homeCtrl', function($scope){
 		if(lang == "en"){
 			$scope.game = 'Play!';
 			$scope.chat = 'Try it!';
+			$scope.grid = "Grid look";
 		}else if(lang == "sl"){
 			$scope.game = 'Igraj!';
 			$scope.chat = 'Zaženi!';
+			$scope.grid ="Mrežni pogled";
 		}
 	}
+	$scope.slide = "Slideshow";
 	changeLang();
 	$('#slo, #eng').on('click', function(){
 		changeLang();
